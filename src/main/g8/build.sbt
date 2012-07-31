@@ -1,24 +1,30 @@
-/** Your awesome project! */
-
+/**
+ * Project
+ *
+ * sbt documentation: https://github.com/harrah/xsbt/wiki
+ */
 name := "$name$"
 
 version := "$version$"
 
 organization := "$organization$"
 
-crossPaths := false
+//scalaVersion := "2.9.1" //define the exact scala version
 
-//scalaVersion := "2.9.1"
+crossPaths := false //disable using the Scala version in output paths and artifacts
 
 
-/** Publish **/
-
-// locally
+/** Publish */
+// publish to local maven
 publishTo := Some(Resolver.file("file", new File(Path.userHome.absolutePath+"/.m2/repository")))
 
 
 /** Repositories */
+// use local maven
 resolvers += "Local Maven Repository" at "file://" + (Path.userHome / ".m2" / "repository").absolutePath
 
 
 /** Dependencies */
+libraryDependencies ++= Seq(
+	"com.weiglewilczek.slf4s" %% "slf4s" % "1.0.7"
+)
