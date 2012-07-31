@@ -7,7 +7,7 @@ name := "$name$"
 
 version := "$version$"
 
-organization := "$organization$"
+organization := "$groupId$"
 
 //scalaVersion := "2.9.1" //define the exact scala version
 
