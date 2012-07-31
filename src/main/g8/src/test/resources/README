@@ -1,0 +1,3 @@
+Add here any non-code file you need for the tests
+
+These files won't be included in deployments (jar or war)
