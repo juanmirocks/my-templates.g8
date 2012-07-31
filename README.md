@@ -1,1 +1,1 @@
-Basic template for scala on sbt
+Template file for project: scala & scala-ide (eclipse) & sbt
