@@ -1,0 +1,1 @@
+Basic template for scala on sbt
