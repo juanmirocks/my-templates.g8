@@ -14,6 +14,11 @@ organization := "$groupId$"
 crossPaths := false //disable using the Scala version in output paths and artifacts
 
 
+/** Configuration */
+//sbteclipse: include resources in classpath
+EclipseKeys.createSrc := EclipseCreateSrc.Default + EclipseCreateSrc.Resource
+
+
 /** Publish */
 // publish to local maven
 publishTo := Some(Resolver.file("file", new File(Path.userHome.absolutePath+"/.m2/repository")))
