@@ -31,5 +31,6 @@ resolvers += "Local Maven Repository" at "file://" + (Path.userHome / ".m2" / "r
 
 /** Dependencies */
 libraryDependencies ++= Seq(
-	"com.weiglewilczek.slf4s" %% "slf4s" % "1.0.7"
+	"com.weiglewilczek.slf4s" %% "slf4s" % "1.0.7",
+	"ch.qos.logback" % "logback-classic" % "1.0.6"	
 )
