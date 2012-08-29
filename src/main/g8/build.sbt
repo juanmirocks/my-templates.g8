@@ -17,6 +17,7 @@ crossPaths := false //disable using the Scala version in output paths and artifa
 /** Configuration */
 //sbteclipse: include resources in classpath
 EclipseKeys.createSrc := EclipseCreateSrc.Default + EclipseCreateSrc.Resource
+
 //sbteclipse: download dependency packages' sources if available
 EclipseKeys.withSource := true
 
