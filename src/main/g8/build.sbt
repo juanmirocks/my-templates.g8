@@ -35,7 +35,7 @@ resolvers += "Local Maven Repository" at "file://" + (Path.userHome / ".m2" / "r
 /** Dependencies */
 libraryDependencies ++= Seq(
     /* Test */
-    "org.scalatest" %% "scalatest" % "2.0.M2" % "test"
+    "org.scalatest" %% "scalatest" % "2.0.M4" % "test"
     /* Main */
     //...
 )
