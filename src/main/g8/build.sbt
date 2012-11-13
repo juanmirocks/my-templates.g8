@@ -2,9 +2,7 @@ import sbtassembly.Plugin._
 import AssemblyKeys._
 
 /**
- * Project
- *
- * sbt documentation: https://github.com/harrah/xsbt/wiki
+ * build configuration (sbt documentation at http://www.scala-sbt.org/)
  */
 name := "$name$"
 
