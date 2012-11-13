@@ -1,3 +1,6 @@
+import sbtassembly.Plugin._
+import AssemblyKeys._
+
 /**
  * Project
  *
@@ -39,3 +42,20 @@ libraryDependencies ++= Seq(
     /* Main */
     //...
 )
+
+/** Assembly Plugin (generate jar with all dependencies) */
+assemblySettings
+
+test in assembly := {} //do not test while assembling
+
+// Merging Conflicts strategy. See: https://github.com/sbt/sbt-assembly
+//
+// mergeStrategy in assembly ~= {
+// old =>
+//  {
+//    case PathList("javax", "servlet", _*) => MergeStrategy.first
+//    case "application.conf"               => MergeStrategy.filterDistinctLines
+//    case "unwanted.txt"                   => MergeStrategy.discard
+//    case x                                => old(x)
+//  }
+// }
