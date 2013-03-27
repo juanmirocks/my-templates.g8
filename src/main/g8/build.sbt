@@ -32,7 +32,7 @@ resolvers ++= Seq(
 /** Dependencies */
 libraryDependencies ++= Seq(
     /* Test */
-    "org.scalatest" %% "scalatest" % "2.0.M4" % "test"
+    "org.scalatest" %% "scalatest" % "2.0.M5" % "test"
     /* Main */
     //...
 )
