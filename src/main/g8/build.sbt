@@ -14,6 +14,7 @@ organization := "$groupId$"
 
 crossPaths := false //disable using the Scala version in output paths and artifacts
 
+
 /** Configuration */
 //sbteclipse: include resources in classpath
 EclipseKeys.createSrc := EclipseCreateSrc.Default + EclipseCreateSrc.Resource
@@ -21,13 +22,15 @@ EclipseKeys.createSrc := EclipseCreateSrc.Default + EclipseCreateSrc.Resource
 //sbteclipse: download dependency packages' sources if available
 EclipseKeys.withSource := true
 
+
 /** Publish */
-// publish to local maven
-publishTo := Some(Resolver.file("file", new File((Path.userHome / ".m2" / "repository").absolutePath)))
+publishTo := Some(Resolver.file("file", new File((Path.userHome / ".m2" / "repository").absolutePath))) //local mvn
+
 
 /** Repositories */
 resolvers ++= Seq(
   "Local Maven Repository" at "file://"+(Path.userHome / ".m2" / "repository").absolutePath)
+
 
 /** Dependencies */
 libraryDependencies ++= Seq(
@@ -36,6 +39,7 @@ libraryDependencies ++= Seq(
     /* Main */
     //...
 )
+
 
 /** Assembly Plugin (generate jar with all dependencies) */
 assemblySettings
