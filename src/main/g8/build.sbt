@@ -27,7 +27,7 @@ publishTo := Some(Resolver.file("file", new File((Path.userHome / ".m2" / "repos
 
 /** Repositories */
 resolvers ++= Seq(
-  "Local Maven Repository" at "file://"+(Path.userHome / ".m2" / "repository").absolutePath,
+  "Local Maven Repository" at "file://"+(Path.userHome / ".m2" / "repository").absolutePath)
 
 /** Dependencies */
 libraryDependencies ++= Seq(
