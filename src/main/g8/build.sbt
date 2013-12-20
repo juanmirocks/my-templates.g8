@@ -10,7 +10,7 @@ version := "$version$"
 
 organization := "$groupId$"
 
-scalaVersion := "2.10.1" //define the exact scala version you want to use, otherwise use system's default
+scalaVersion := "2.10.2" //define the exact scala version you want to use, otherwise use system's default
 
 crossPaths := false //disable using the Scala version in output paths and artifacts
 
@@ -35,7 +35,7 @@ resolvers ++= Seq(
 /** Dependencies */
 libraryDependencies ++= Seq(
   /* Test */
-  "org.scalatest" % "scalatest_2.10" % "2.0.M5b" % "test"
+  "org.scalatest" % "scalatest_2.10" % "2.0" % "test"
   /* Main */
   //...
 )
