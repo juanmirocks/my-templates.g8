@@ -10,7 +10,7 @@ version := "$version$"
 
 organization := "$groupId$"
 
-scalaVersion := "2.10.2" //define the exact scala version you want to use, otherwise use system's default
+scalaVersion := "2.10.3" //define the exact scala version you want to use, otherwise use system's default
 
 crossPaths := false //disable using the Scala version in output paths and artifacts
 
